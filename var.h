@@ -1,7 +1,7 @@
 class any {
 };
 
-templete <typename T>
+template <typename T>
 class anytype : any {
     T d;
 public:
@@ -19,11 +19,11 @@ public:
         }
 
     }
-    templete<typename T> var(T d) {
+    template<typename T> var(T d) {
         clear();
         data = new anytype<T>(d);
     }
-    templete<typename T> var& operator = (T d) {
+    template<typename T> var& operator = (T d) {
         clear();
         data = new anytype<T>(d);
     }
