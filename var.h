@@ -1,3 +1,4 @@
+
 class any {
 };
 
@@ -19,6 +20,8 @@ public:
         }
 
     }
+    var() {
+    };
     template<typename T> var(T d) {
         clear();
         data = new anytype<T>(d);
