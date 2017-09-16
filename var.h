@@ -3,7 +3,7 @@ class any {
 };
 
 template <typename T>
-class anytype : any {
+class anytype : public any {
     T d;
 public:
     anytype(T data) {
